@@ -30,6 +30,8 @@ public class Solution689 {
     + k will be between 1 and floor(nums.length / 3).
      */
 
+    // https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/discuss/108231/C++Java-DP-with-explanation-O(n)
+    // 可以通过dp改进，想法还是分为三个窗口，但是通过数组保存之前窗口的结果
     public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
         /*
         每次固定一个长度为k的窗口，然后滑动第二个窗口，然后相应的滑动第三个窗口
